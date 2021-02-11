@@ -1,0 +1,31 @@
+h1.headline--text {
+  font-family: "dinfont";
+  color: #fff;
+}
+@media (max-width: 576px) {
+  h1.headline--text {
+    font-size: 1.5rem;
+  }
+}
+
+.lead {
+  color: #fff;
+}
+
+.white-background {
+  background-color: #fff;
+}
+
+.dark-gray-background {
+  background-color: #252525;
+}
+
+.jumbotron {
+  background-image: url("https://www.doku.com/assets/demo/misc/fancy-image-1b.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

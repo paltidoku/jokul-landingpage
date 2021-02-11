@@ -1,0 +1,36 @@
+
+
+//Big banner
+h1.headline--text{
+  font-family: 'dinfont';
+  @media (max-width: 576px) {
+    font-size: 1.5rem;
+  }
+
+  color: #fff;
+}
+
+.lead{
+  color: #fff;
+}
+
+
+
+//
+
+.white-background {
+  background-color: #fff;
+}
+
+.dark-gray-background {
+  background-color: #252525;
+}
+
+.jumbotron{
+  background-image: url("https://www.doku.com/assets/demo/misc/fancy-image-1b.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+  // background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+}

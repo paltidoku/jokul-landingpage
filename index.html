@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<title>Jokul | New Payment Gateway by DOKU</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/png"
+		href="https://cdn-dev.oss-ap-southeast-5.aliyuncs.com/doku-ui-framework/doku/img/favicon.png" />
+
+	<!-- Custom Styling -->
+	<link href="https://cdn-dev.oss-ap-southeast-5.aliyuncs.com/doku-css/1.1.1/css/main.min.css" rel="stylesheet">
+	<link href="https://cdn-dev.oss-ap-southeast-5.aliyuncs.com/doku-css/jokul-stylesheet/1.0.0/style.css"
+		rel="stylesheet">
+	<!-- <link href="https://cdn-dev.oss-ap-southeast-5.aliyuncs.com/doku-css/jokul-stylesheet/1.0.0/style.css"rel="stylesheet"> -->
+	<link rel="stylesheet" href="styles.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">
+			<img
+				src="https://cdn-dev.oss-ap-southeast-5.aliyuncs.com/doku-ui-framework/doku/img/jokul/Logo_DOKU_Jokul-white.png"
+				alt="" height="30">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Dokumentasi</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Demo</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Sandbox</a>
+				</li>
+				<li class="nav-item">
+					<a class="btn btn-secondary btn-sm my-2 my-md-0 mr-xl-2 mr-0" href="#">MASUK</a>
+				</li>
+				<li class="nav-item">
+					<a class="btn btn-primary btn-sm my-2 my-xl-0" href="#">DAFTAR</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<section class="jumbotron">
+		<div class="container pt-4">
+			<div class="row py-md-5 py-4">
+				<div class="col-12 col-md-6 py-4 py-md-5">
+					<h1 class="headline--text">#MoreThanPayments</h1>
+					<div class="lead">
+						<p>
+							Istilah Go Digital kerap memicu berbagai pemahaman di benak para pengusaha. Setidaknya semua
+							sepakat bahwa digital akan mempercepat proses bisnis dan mendukung perluasan pasar melalui
+							sistem yang real-time dan otomatis. Dukungan digital yang tepat tentunya akan mempermudah
+							navigasi operasional bisnis sehari-hari.
+						</p>
+
+						<p>
+							Memperkenalkan Jokul, platform administrasi pembayaran online terintegrasi persembahan DOKU,
+							pionir payment gateway Indonesia yang terus bertransformasi.
+						</p>
+
+						<ul>
+							<li>Platform Pembayaran & Keuangan Digital yang Sistematis</li>
+							<li>Fitur Pengaturan Keuangan Pilihan Sesuai Kebutuhan Bisnis</li>
+							<li>Platform yang bertumbuh Sesuai Kesiapan Bisnis</li>
+						</ul>
+					</div>
+
+
+					<a href="https://sandbox.doku.com/bo/sandbox-registration" class="btn btn-outline-primary my-3 mr-2">DEMO</a>
+					<a href="https://jokul.doku.com/bo/register" class="btn btn-primary my-3">DAFTAR SEKARANG</a>
+					<!-- <a href="https://jokul.doku.com/bo/register" class="btn btn-lg btn-outline-primary mt-3 mr-2">DEMO</a> -->
+				</div>
+
+				<!-- <div class="col-12 col-md-6 py-4 py-md-5 d-md-block d-none">
+					<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="https://via.placeholder.com/600x330" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="https://via.placeholder.com/400x330" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="https://via.placeholder.com/500x330" class="d-block w-100" alt="...">
+							</div>
+						</div>
+					</div>
+				</div> -->
+
+			</div>
+		</div>
+	</section>
+
+	<div class="white-background">
+		<div class="container py-4 py-md-5">
+			<div class="row py-4 py-md-5">
+				<div class="col-12 col-md-4">
+					<img src="img_111.svg" alt="" class="mr-1">
+					<h4>Sistem Pembayaran Untuk Segala Fase
+						Bisnis</h4>
+					<p>Dari toko kelontong, e-commerce, SaaS, bisnis subscription, hingga marketplace. Dapatkan kemudahan
+						mengaktifkan navigasi administrasi pembayaran online untuk bisnis Anda. Mulai dengan proses registrasi dan
+						Go live yang cepat, dengan atau tanpa website sekalipun. Semua proses dipaparkan secara transparan untuk
+						Anda.</p>
+				</div>
+
+				<div class="col-12 col-md-4 mt-3 mt-md-0">
+					<img src="img_111.svg" alt="" class="mr-1">
+					<h4>Mengiringi Laju Pertumbuhan Bisnis </h4>
+					<p>Didukung oleh teknologi DOKU yang andal, Jokul telah dipersiapkan untuk bertumbuh bersama bisnis Anda.
+						Sebuah fondasi sistem pembayaran online yang gesit menyesuaikan dengan setiap kebutuhan bisnis. </p>
+				</div>
+
+				<div class="col-12 col-md-4 mt-3 mt-md-0">
+					<img src="img_111.svg" alt="" class="mr-1">
+					<h4>Kelola Pembayaran Online Dengan Praktis
+					</h4>
+					<p>Semua lengkap tersaji dalam satu layar. Pantau kegiatan jual-beli melalui satu platform Jokul secara
+						real-time, mendukung akurasi dan transparansi pergerakan bisnis online Anda sehari-hari..</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section>
+		<div class="container py-4 py-md-5">
+			<div class="row py-4 py-md-5 justify-content-beetwen">
+				<div class="col-12 col-md-4 mt-4 mt-md-5">
+					<small>Jangkau pasar seluas-luasnya! </small>
+					<h2>Terima Berbagai Metode Pembayaran</h2>
+					<p>Anda dapat menerima pembayaran dari berbagai jenis metode pembayaran. Pilih sesuai kebutuhan
+						Anda.</p>
+
+					<ul class="list-unstyled">
+						<li class="my-2"><i class="fa fa-university"></i> Virtual Account (Transfer Bank)</li>
+						<li class="my-2"><i class="fa fa-credit-card"></i> Kartu Kredit</li>
+						<li class="my-2"><i class="fa fa-wallet"></i> E-Money</li>
+						<li class="my-2"><i class="fa fa-store"></i> O2O (Online to Offline)</li>
+						<li class="my-2"><i class="fa fa-credit-card"></i> Direct Debit (Kartu Debit)</li>
+					</ul>
+				</div>
+
+				<div class="col-12 col-md-8 mt-4 mt-md-5 ">
+					<div class="">
+						<img src="https://storage.googleapis.com/go-merchant-production.appspot.com/uploads/2020/09/c0083779a8e83d4c5c437d84d2c01405_9ef2e0399410b1914abd2896a88b9cbd_compressed.png" style="height: 350px;" alt="" class="img-fluid">
+
+					</div>
+					<!-- <img src="https://via.placeholder.com/750x330" alt="" class="img-fluid"> -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="white-background">
+		<div class="container py-4 py-md-5">
+			<div class="row py-4 py-md-5">
+				<div class="col-12 col-md-6">
+					<img src="https://storage.googleapis.com/go-merchant-production.appspot.com/uploads/2020/09/c0083779a8e83d4c5c437d84d2c01405_9ef2e0399410b1914abd2896a88b9cbd_compressed.png" style="height: 350px;" alt="" class="img-fluid">
+				</div>
+				<div class="col-12 col-md-6 mt-4 mt-md-0">
+					<h5>Mendukung perkembangan UMKM Indonesia</h5>
+					<h2>Untuk Bisnis Rumahan</h2>
+					<p>Manfaatkan fitur-fitur pembayaran yang tepat dan telah kami kurasi, agar bisnis kecil-kecilan Anda dapat
+						bergerak naik memasuki skala bisnis yang lebih besar lagi.</p>
+				</div>
+			</div>
+
+			<div class="row pb-4 pb-md-5">
+				<div class="col-12 col-md-4">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-12">
+									<img src="img_111.svg" alt="" class="mr-1">
+									
+									<h4>Buat Link
+										Pembayaran untuk Pelanggan Anda</h4>
+									<p>Terima pembayaran semudah membuat link. Tagih dengan mengirimkan link tersebut ke pelanggan Anda
+										melalui media sosial, platform chatting, atau e-mail.</p>
+
+									<hr>
+
+									<a href="https://jokul.doku.com/docs/docs/jokul-link-overview"><i class="fa fa-angle-right"></i>
+										Pelajari selengkapnya tentang Jokul Link</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 mt-3 mt-md-0">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-12">
+									<img src="img_111.svg" alt="" class="mr-1">
+									
+									<h4>Buat Link
+										Pembayaran dari WhatsApp</h4>
+									<p>Buat link pembayaran makin cepat, secepat mengirim pesan WhatsApp ke sahabat Anda. Deal harga via
+										WA chat dan langsung kirimkan link penagihan.
+									</p>
+
+									<hr>
+
+									<a href="https://jokul.doku.com/docs/docs/jokul-link/jokul-link-overview"><i
+											class="fa fa-angle-right"></i> Pelajari selengkapnya tentang WhatsApp
+										Link</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 mt-3 mt-md-0">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-12">
+									<img src="img_111.svg" alt="" class="mr-1">
+									
+									<h4>Pantau
+										Transaksi dengan Transparan</h4>
+									<p>Awasi seluruh pergerakan transaksi yang terjadi dalam bisnis Anda agar gesit dan akurat dalam
+										melayani kebutuhan pembayaran pelanggan. </p>
+
+
+									<hr>
+
+									<a href="https://jokul.doku.com/docs/docs/jokul-link/jokul-link-overview"><i
+											class="fa fa-angle-right"></i> Pelajari selengkapnya tentang Real Time
+										Report</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<div class="container py-4 py-md-5">
+			<div class="row py-4 py-md-5">
+
+				<div class="col-12 col-md-6 mt-4 mt-md-0">
+					<h5>Dari developer, untuk developer</h5>
+					<h2>Untuk Pendiri Startup dan Developer</h2>
+					<p>Bangun integrasi sistem yang siap untuk dirilis secara cepat dan intuitif. Dokumentasi yang
+						komprehensif dan berbagai tools yang Anda dibutuhkan untuk mempercepat pengembangan tersedia untuk
+						Anda</p>
+				</div>
+				<div class="col-12 col-md-6">
+					<img src="https://storage.googleapis.com/go-merchant-production.appspot.com/uploads/2020/09/c0083779a8e83d4c5c437d84d2c01405_9ef2e0399410b1914abd2896a88b9cbd_compressed.png" style="height: 350px;" alt="" class="img-fluid">
+				</div>
+			</div>
+
+			<div class="row pb-4 pb-md-5">
+				<div class="col-12 col-md-4">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-12">
+									<img src="img_111.svg" alt="" class="mr-1">
+									
+									<h4>Dokumentasi
+										Komprehensif</h4>
+									<p>Pelajari dokumentasi teknis kami untuk proses integrasi sistem yang lancar tanpa
+										hambatan.</p>
+
+									<hr>
+
+									<a href="https://jokul.doku.com/docs/"><i class="fa fa-angle-right"></i> Pelajari
+										selengkapnya tentang Jokul Documentation</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 mt-3 mt-md-0">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-12">
+									<img src="img_111.svg" alt="" class="mr-1">
+									
+									<h4>Tools untuk
+										Berbagai Jenis Integrasi</h4>
+									<p>Tools memadai untuk segala jenis integrasi Anda, baik dengan CMS atau
+										pengembangan sendiri</p>
+
+									<hr>
+
+									<a href="https://jokul.doku.com/docs/docs/integrations/integrations-overview"><i
+											class="fa fa-angle-right"></i> Pelajari selengkapnya tentang Jokul
+										Integrations</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 mt-3 mt-md-0">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-12">
+									<img src="img_111.svg" alt="" class="mr-1">
+									
+									<h4>Kekuatan Open
+										Source</h4>
+									<p>Seluruh tools yang kami sediakan bersifat Open Source dan dapat Anda kembangkan
+										sesuai kebutuhan bisnis Anda</p>
+
+									<hr>
+
+									<a href="https://jokul.doku.com/docs/docs/integrations/integrations-overview"><i
+											class="fa fa-angle-right"></i> Pelajari selengkapnya tentang Jokul
+										Integations</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="white-background">
+		<div class="container py-4 py-md-5">
+			<div class="row py-4 py-md-5">
+				<div class="col-12 col-md-6">
+					<!-- <img src="https://via.placeholder.com/550x350" alt="" class="img-fluid"> -->
+					<!-- <img src="https://cdn-dev.oss-ap-southeast-5.aliyuncs.com/doku-ui-framework/doku/img/illustration/akun-terkunci.svg" alt="" class="img-fluid"> -->
+					<img src="https://storage.googleapis.com/go-merchant-production.appspot.com/uploads/2020/09/c0083779a8e83d4c5c437d84d2c01405_9ef2e0399410b1914abd2896a88b9cbd_compressed.png" alt="" class="img-fluid">
+				</div>
+				<div class="col-12 col-md-6 mt-4 mt-md-0">
+					<h5>Mengakomodasi kompleksitas alur bisnis Anda</h5>
+					<h2>Untuk Enterprise</h2>
+					<p>Perbanyak dan lengkapi metode pembayaran demi kenyamanan transaksi pelanggan dengan sekali proses
+						integrasi. Optimalkan administrasi pembayaran online yang telah Anda miliki dengan Jokul.</p>
+				</div>
+			</div>
+
+			<div class="row pb-4 pb-md-5">
+				<div class="col-12 col-md-4">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-12">
+									<!-- <i class="fab fa-500px" style="color: red; font-size: 1rem;"></i> -->
+									<img src="img_111.svg" alt="" class="mr-1">
+									<h4>Buat Link Pembayaran untuk Konsumen Anda</h4>
+									<p>Terima pembayaran semudah membuat link dan kirimkan link tersebut ke konsumen
+										Anda.</p>
+
+									<hr>
+
+									<a href="https://jokul.doku.com/docs/docs/jokul-link-overview" target="_blank"><i class="fa fa-angle-right"></i>
+										Pelajari selengkapnya tentang Jokul Link</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 mt-3 mt-md-0">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-12">
+									<img src="img_111.svg" alt="" class="mr-1">
+									<!-- <i class="fab fa-500px" style="color: green; font-size: 1.5rem;"></i> -->
+									<h4>Buat Link
+										Pembayaran dari WhatsApp</h4>
+									<p>Buat link pembayaran lebih mudah lagi semudah mengirim WhatsApp ke sahabat Anda.
+									</p>
+
+									<hr>
+									<a href="https://jokul.doku.com/docs/docs/jokul-link/jokul-link-overview" target="_blank"><i
+											class="fa fa-angle-right"></i> Pelajari selengkapnya tentang WhatsApp
+										Link</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 mt-3 mt-md-0">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-12">
+									<img src="img_111.svg" alt="" class="mr-1">
+									<h4>Pantau
+										Transaksi dengan Mudah</h4>
+									<p>Lihat seluruh pembayaran online yang terjadi di bisnis Anda untuk memberikan
+										layanan prima kepada konsumen Anda.</p>
+
+									<hr>
+
+									<a href="https://jokul.doku.com/docs/docs/jokul-link/jokul-link-overview" target="_blank"><i
+											class="fa fa-angle-right"></i> Pelajari selengkapnya tentang Real Time
+										Report</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<div class="container py-4 py-md-5">
+			<div class="row py-4 py-md-5">
+				<div class="col-12 text-center">
+					<h2>Optimalkan Potensi Bisnis Anda Lewat Digital</h2>
+					<p class="lead">Masuki era baru dalam mengelola bisnis Anda bersama Jokul.</p>
+				</div>
+			</div>
+
+			<div class="row text-center">
+				<div class="col-12 col-md-4">
+					<!-- <img src="https://via.placeholder.com/150x150" alt="" class="img-fluid"> -->
+									<img src="https://cdn-dev.oss-ap-southeast-5.aliyuncs.com/doku-ui-framework/doku/img/illustration/akun-terkunci.svg" style="height: 150px; width: auto;" alt="" class="img-fluid">
+
+					<h4 class="mt-3">Daftarkan Bisnis Anda</h4>
+					<p>Upload dokumen yang diperlukan, pilih layanan yang sesuai dengan kebutuhan bisnis Anda</p>
+				</div>
+
+				<div class="col-12 col-md-4 mt-3 mt-md-0">
+					<img src="https://cdn-dev.oss-ap-southeast-5.aliyuncs.com/doku-ui-framework/doku/img/illustration/akun-terkunci.svg" style="height: 150px; width: auto;" alt="" class="img-fluid">
+					<h4 class="mt-3">Integrasikan Sistem Anda</h4>
+					<p>Ikuti dokumentasi kami untuk integrasi, <strong>bahkan tanpa integrasi</strong> dengan layanan
+						Jokul Link</p>
+				</div>
+
+				<div class="col-12 col-md-4 mt-3 mt-md-0">
+					<img src="https://cdn-dev.oss-ap-southeast-5.aliyuncs.com/doku-ui-framework/doku/img/illustration/akun-terkunci.svg" style="height: 150px; width: auto;" alt="" class="img-fluid">
+					<h4 class="mt-3">Terima & Kelola Pembayaran</h4>
+					<p>Mulai terima pembayaran secara online dan kelola transaksi Anda dengan mudah dari Jokul Back
+						Office</p>
+				</div>
+			</div>
+
+			<div class="row text-center mt-4 mt-md-5 pb-4 pb-md-5">
+				<div class="col-12">
+					<a href="https://jokul.doku.com/bo/register" class="btn btn-lg btn-primary">DAFTAR SEKARANG</a><br>
+					<small><a href="https://sandbox.doku.com/bo/sandbox-registration" target="_blankR">Uji Coba Layanan Kami di
+							Sandbox</a></small>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="dark-gray-background">
+		<div class="container py-4 py-md-5">
+			<div class="row">
+				<div class="col-12 col-md-4">
+					<!-- <img src="https://cdn-dev.oss-ap-southeast-5.aliyuncs.com/doku-ui-framework/doku/img/jokul/Logo_Jokul%20Powered%20-by-DOKU.png" style="height: 60px;" alt="" class="img-fluid"> -->
+					<img src="https://cdn-dev.oss-ap-southeast-5.aliyuncs.com/doku-ui-framework/doku/img/jokul/Logo_DOKU_Jokul-white.png" style="height: 60px;" alt="" class="img-fluid">
+
+					<h4 class="text-white mt-4">Langganan Newsletter</h4>
+					<div class="form-group">
+						<div class="input-group">
+							<input class="form-control dk-text-input ng-untouched ng-pristine ng-invalid" id="newsletterEmail"
+								placeholder="email@example.com" type="text">
+							<div class="input-group-append">
+								<button class="btn btn-primary dk-btn-group" id="button-addon1" type="button"><i
+										class="fa fa-angle-right"></i></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="mt-4">
+						<a href="https://www.facebook.com/" class="text-white mr-2"><span style="font-size: 1.5em"><i
+									class="fab fa-facebook"></i></span></a>
+						<a href="https://instagram.com/" class="text-white"><span style="font-size: 1.5em"><i
+									class="fab fa-instagram"></i></span></a>
+					</div>
+				</div>
+
+				<div class="col-md-2 mt-4 mt-md-0">
+
+				</div>
+
+				<div class="col-6 col-md-2">
+					<h3 class="text-white">Resources</h3>
+
+					<ul class="list-unstyled">
+						<li class="my-3"><a href="https://jokul.doku.com/docs" class="text-white">Dokumentasi Teknis</a>
+						</li>
+						<li class="my-3"><a href="#" class="text-white">Blog</a></li>
+						<li class="my-3"><a href="#" class="text-white">Harga</a></li>
+						<li class="my-3"><a href="#" class="text-white">Pusat Bantuan</a></li>
+					</ul>
+				</div>
+
+				<div class="col-6 col-md-2">
+					<h3 class="text-white">Jokul</h3>
+
+					<ul class="list-unstyled">
+						<li class="my-3"><a href="#" class="text-white">Kebijakan Privasi</a></li>
+						<li class="my-3"><a href="#" class="text-white">Syarat dan Ketentuan</a></li>
+						<li class="my-3"><a href="#" class="text-white">FAQs</a></li>
+					</ul>
+				</div>
+
+				<div class="col-6 col-md-2">
+					<h3 class="text-white">Company</h3>
+
+					<ul class="list-unstyled">
+						<li class="my-3"><a href="#" class="text-white">Tentang DOKU</a></li>
+						<li class="my-3"><a href="#" class="text-white">Lisensi</a></li>
+						<li class="my-3"><a href="#" class="text-white">Kontak</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="row mt-2 mt-md-5">
+				<div class="col-12 text-center text-md-right">
+					<small class="text-white">ⓒ 2021 Jokul (PT Nusa Satu Inti Artha)</small>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<script src="https://cdn-dev.oss-ap-southeast-5.aliyuncs.com/doku-ui-framework/doku/js/jquery-3.3.1.min.js"></script>
+<!-- Popper and Bootstrap JS -->
+<script src="https://cdn-dev.oss-ap-southeast-5.aliyuncs.com/doku-ui-framework/doku/js/popper.min.js"></script>
+<script src="https://cdn-dev.oss-ap-southeast-5.aliyuncs.com/doku-ui-framework/doku/js/bootstrap.min.js"></script>
+
+</html>

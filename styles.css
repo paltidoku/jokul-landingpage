@@ -1,8 +1,25 @@
 .bg-color-transition, .navbar-collapse.collapse.show::before, .header.on-scroll .navbar-collapse.collapse.show::before, .header.on-scroll {
-  -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear;
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
   box-shadow: -1px 0px 8px #9c9c9c3b;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+.btn {
+  font-weight: 500;
+}
+
+.btn-outline-white {
+  border-color: #fff;
+  color: #fff;
+}
+.btn-outline-white:hover {
+  background-color: #fff;
+  color: #E1251B;
 }
 
 a:hover {
@@ -71,6 +88,7 @@ a:hover {
 
 h1.headline--text {
   font-family: "dinfont";
+  font-size: 3rem;
   color: #fff;
 }
 @media (max-width: 576px) {
@@ -101,9 +119,41 @@ h1.headline--text {
 .jumbotron .headline--text {
   font-weight: 800;
 }
+@media (max-width: 992px) {
+  .jumbotron .img-holder {
+    display: none;
+  }
+}
+
+.selling {
+  background: #c7c7c7;
+  background: linear-gradient(0deg, #c7c7c7 0%, white 100%);
+}
+
+.five-pain h2 {
+  font-weight: 800;
+}
+.five-pain .col {
+  padding: 16px 8 16px 8;
+  color: #1A1A1A;
+  font-weight: 400;
+}
+.five-pain .col span:first-of-type {
+  color: #4D4D4D;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 8px;
+}
 
 .case .card {
   border: 0;
+}
+.case p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.case img {
+  margin-bottom: 1rem;
 }
 
 .top-pin .card {
@@ -115,6 +165,15 @@ h1.headline--text {
 }
 .top-pin .card .card-body img {
   margin-bottom: 8px;
+}
+
+#skew-this {
+  width: 100%;
+  height: 52%;
+  background: #ecb6bf;
+  background: linear-gradient(0deg, #ecb6bf 0%, white 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+  position: absolute;
 }
 
 .skew-bg::before {
@@ -132,6 +191,10 @@ h1.headline--text {
   z-index: 0;
   background: #fdf7f8;
   background: linear-gradient(0deg, #fdf7f8 0%, white 100%);
+}
+
+.navbar-collapse.collapse.show::before, .header.on-scroll .navbar-collapse.collapse.show::before {
+  transform: scaleX(2);
 }
 
 /*# sourceMappingURL=styles.css.map */

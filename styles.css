@@ -10,7 +10,7 @@ h2 {
 }
 
 .btn {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .btn-outline-white {
@@ -59,11 +59,15 @@ a:hover {
 .navbar .navbar-brand {
   font-size: 1.29375rem;
   margin-right: 3rem;
+  padding-bottom: 0;
 }
 .navbar .custom-navbar-toggler-icon img {
   height: 24px;
   width: 24px;
   filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(137deg) brightness(103%) contrast(101%);
+}
+.navbar .nav-item {
+  margin-right: 1rem;
 }
 .navbar a.nav-link {
   color: #fff;
@@ -73,7 +77,7 @@ a:hover {
 }
 
 .navbar-collapse.collapse.show::before {
-  background-color: #3a3a3c;
+  background-color: #f99f1b;
   content: "";
   display: block;
   width: 100%;
@@ -106,7 +110,27 @@ h1.headline--text {
 }
 
 .dark-gray-background {
-  background-color: #252525;
+  background-color: #1A1A1A;
+}
+
+.bg-soft-gray {
+  background-color: #F6F6F6;
+}
+
+.gray-gradient {
+  background: #f6f6f6;
+  background: linear-gradient(180deg, #f6f6f6 0%, white 100%);
+}
+
+.gray-background::before {
+  content: "";
+  background-color: #F6F6F6;
+  transform: translateY(-37px);
+  height: 40%;
+  width: 100%;
+  z-index: 0;
+  left: 0;
+  position: absolute;
 }
 
 .jumbotron {
@@ -123,11 +147,6 @@ h1.headline--text {
   .jumbotron .img-holder {
     display: none;
   }
-}
-
-.selling {
-  background: #c7c7c7;
-  background: linear-gradient(0deg, #c7c7c7 0%, white 100%);
 }
 
 .five-pain h2 {
@@ -156,6 +175,9 @@ h1.headline--text {
   margin-bottom: 1rem;
 }
 
+.top-pin {
+  margin: 5rem 0 0;
+}
 .top-pin .card {
   border: 0;
   box-shadow: 0px 16px 20px rgba(156, 156, 156, 0.08), 0px 6px 24px rgba(150, 150, 150, 0.05);
@@ -193,7 +215,8 @@ h1.headline--text {
   background: linear-gradient(0deg, #fdf7f8 0%, white 100%);
 }
 
-.navbar-collapse.collapse.show::before, .header.on-scroll .navbar-collapse.collapse.show::before {
+.navbar-collapse.collapse.show::before,
+.header.on-scroll .navbar-collapse.collapse.show::before {
   transform: scaleX(2);
 }
 

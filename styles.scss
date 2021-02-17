@@ -7,13 +7,13 @@ $primary: #E1251B;
   box-shadow: -1px 0px 8px #9c9c9c3b;
 }
 
-h2{
+h2 {
   font-weight: 800;
 }
 
 //btn-secondary
 .btn {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .btn-outline-white {
@@ -82,6 +82,7 @@ a {
   .navbar-brand {
     font-size: 1.29375rem;
     margin-right: 3rem;
+    padding-bottom: 0;
   }
 
   .custom-navbar-toggler-icon {
@@ -90,6 +91,10 @@ a {
       width: 24px;
       filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(137deg) brightness(103%) contrast(101%);
     }
+  }
+
+  .nav-item {
+    margin-right: 1rem;
   }
 
   a.nav-link {
@@ -103,7 +108,7 @@ a {
 
 
 .navbar-collapse.collapse.show::before {
-  background-color: #3a3a3c;
+  background-color: #f99f1b;
   @extend .bg-color-transition;
   content: "";
   display: block;
@@ -142,7 +147,29 @@ h1.headline--text {
 }
 
 .dark-gray-background {
-  background-color: #252525;
+  background-color: #1A1A1A;
+}
+
+.bg-soft-gray {
+  background-color: #F6F6F6;
+}
+
+.gray-gradient {
+  background: rgb(246, 246, 246);
+  background: linear-gradient(180deg, rgba(246, 246, 246, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.gray-background {
+  &::before {
+    content: "";
+    background-color: #F6F6F6;
+    transform: translateY(-37px);
+    height: 40%;
+    width: 100%;
+    z-index: 0;
+    left: 0;
+    position: absolute;
+  }
 }
 
 .jumbotron {
@@ -159,17 +186,17 @@ h1.headline--text {
     font-weight: 800;
   }
 
-  .img-holder{
+  .img-holder {
     @media (max-width: 992px) {
       display: none;
     }
   }
 }
 
-.selling{
-  background: rgb(199,199,199);
-background: linear-gradient(0deg, rgba(199,199,199,1) 0%, rgba(255,255,255,1) 100%);
-}
+// .selling{
+//   background: rgb(199,199,199);
+//   background: linear-gradient(0deg, rgba(199,199,199,1) 0%, rgba(255,255,255,1) 100%);
+// }
 
 //Sectopm 5-pain
 .five-pain {
@@ -185,8 +212,9 @@ background: linear-gradient(0deg, rgba(199,199,199,1) 0%, rgba(255,255,255,1) 10
     padding: 16px 8 16px 8;
     color: #1A1A1A;
     font-weight: 400;
+
     span:first-of-type {
-    color: #4D4D4D;
+      color: #4D4D4D;
       font-weight: 400;
       display: block;
       margin-bottom: 8px;
@@ -205,13 +233,15 @@ background: linear-gradient(0deg, rgba(199,199,199,1) 0%, rgba(255,255,255,1) 10
     line-height: 1.5;
   }
 
-  img{
+  img {
     margin-bottom: 1rem;
   }
 }
 
 
 .top-pin {
+  margin: 5rem 0 0;
+
   .card {
     border: 0;
     box-shadow: 0px 16px 20px rgba(156, 156, 156, 0.08), 0px 6px 24px rgba(150, 150, 150, 0.05);
@@ -257,19 +287,23 @@ background: linear-gradient(0deg, rgba(199,199,199,1) 0%, rgba(255,255,255,1) 10
     background: #fdf7f8;
     background: linear-gradient(0deg, #fdf7f8 0%, white 100%);
   }
-
 }
 
 
 //hack
-.bg-color-transition, .navbar-collapse.collapse.show::before, .header.on-scroll .navbar-collapse.collapse.show::before, .header.on-scroll{
+.bg-color-transition,
+.navbar-collapse.collapse.show::before,
+.header.on-scroll .navbar-collapse.collapse.show::before,
+.header.on-scroll {
   @media (min-width: 576px) {
     // box-shadow: none;
   }
+
   // border-bottom: 1px solid black;
 }
 
-.navbar-collapse.collapse.show::before, .header.on-scroll .navbar-collapse.collapse.show::before{
+.navbar-collapse.collapse.show::before,
+.header.on-scroll .navbar-collapse.collapse.show::before {
   // box-shadow: none;
   transform: scaleX(2);
 }

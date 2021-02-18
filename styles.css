@@ -1,3 +1,8 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1300px;
+  }
+}
 .bg-color-transition, .navbar-collapse.collapse.show::before, .header.on-scroll .navbar-collapse.collapse.show::before, .header.on-scroll {
   -webkit-transition: background-color 300ms linear;
   -ms-transition: background-color 300ms linear;

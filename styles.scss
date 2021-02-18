@@ -1,5 +1,12 @@
 $primary: #E1251B;
 
+
+@media (min-width: 1200px) {
+  .container{
+      max-width: 1300px;
+  }
+}
+
 .bg-color-transition {
   -webkit-transition: background-color 300ms linear;
   -ms-transition: background-color 300ms linear;

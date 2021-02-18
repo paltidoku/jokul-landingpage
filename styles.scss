@@ -215,20 +215,31 @@ h1.headline--text {
     font-weight: 800;
   }
 
-  .col {
-    padding: 16px 8 16px 8;
-    color: #1A1A1A;
-    font-weight: 400;
-    padding: 1.2rem;
-
-    span:first-of-type {
-      color: #1a1a1a;
-      font-weight: 700;
-      display: block;
-      margin-bottom: 8px;
-      font-size: 1.1rem;
+  .inovation{
+    .col {
+      padding: 16px 8 16px 8;
+      color: #1A1A1A;
+      font-weight: 400;
+      padding: 1.2rem;
+      @media (max-width: 767px ) {
+          width: 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+      }
+  
+      span:first-of-type {
+        color: #1a1a1a;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 8px;
+        font-size: 1.1rem;
+      }
     }
+
+    
   }
+
+  
 }
 
 //Section CASE
@@ -316,3 +327,4 @@ h1.headline--text {
   // box-shadow: none;
   transform: scaleX(2);
 }
+

@@ -157,13 +157,20 @@ h1.headline--text {
 .five-pain h2 {
   font-weight: 800;
 }
-.five-pain .col {
+.five-pain .inovation .col {
   padding: 16px 8 16px 8;
   color: #1A1A1A;
   font-weight: 400;
   padding: 1.2rem;
 }
-.five-pain .col span:first-of-type {
+@media (max-width: 767px) {
+  .five-pain .inovation .col {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.five-pain .inovation .col span:first-of-type {
   color: #1a1a1a;
   font-weight: 700;
   display: block;

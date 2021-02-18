@@ -1,6 +1,6 @@
 @media (min-width: 1200px) {
   .container {
-    max-width: 1300px;
+    max-width: 1200px;
   }
 }
 .bg-color-transition, .navbar-collapse.collapse.show::before, .header.on-scroll .navbar-collapse.collapse.show::before, .header.on-scroll {
@@ -161,12 +161,14 @@ h1.headline--text {
   padding: 16px 8 16px 8;
   color: #1A1A1A;
   font-weight: 400;
+  padding: 1.2rem;
 }
 .five-pain .col span:first-of-type {
-  color: #4D4D4D;
-  font-weight: 400;
+  color: #1a1a1a;
+  font-weight: 700;
   display: block;
   margin-bottom: 8px;
+  font-size: 1.1rem;
 }
 
 .case .card {

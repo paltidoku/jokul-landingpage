@@ -160,7 +160,7 @@ h1.headline--text {
   }
 }
 .jumbotron .jb-img {
-  background-image: url("/assets/illustration/jb-laptop.png");
+  background-image: url("./assets/illustration/jb-laptop.png");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;

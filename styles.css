@@ -147,11 +147,26 @@ h1.headline--text {
 }
 .jumbotron .headline--text {
   font-weight: 800;
+  line-height: 1;
 }
 @media (max-width: 992px) {
   .jumbotron .img-holder {
     display: none;
   }
+}
+@media (max-width: 767px) {
+  .jumbotron .btn-sandbox {
+    display: block;
+  }
+}
+.jumbotron .jb-img {
+  background-image: url("/assets/illustration/jb-laptop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .five-pain h2 {
@@ -160,8 +175,9 @@ h1.headline--text {
 .five-pain .inovation .col {
   padding: 16px 8 16px 8;
   color: #1A1A1A;
-  font-weight: 400;
+  font-weight: 700;
   padding: 1.2rem;
+  font-size: 1.1rem;
 }
 @media (max-width: 767px) {
   .five-pain .inovation .col {
@@ -172,10 +188,10 @@ h1.headline--text {
 }
 .five-pain .inovation .col span:first-of-type {
   color: #1a1a1a;
-  font-weight: 700;
+  font-weight: 400;
   display: block;
   margin-bottom: 8px;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .case .card {
